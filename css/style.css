@@ -1,0 +1,15 @@
+*:focus {
+  outline: none;
+}
+
+* {
+  transition: 0.3s;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;

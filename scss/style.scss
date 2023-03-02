@@ -1,0 +1,10 @@
+@import './mini/reset';
+@import './mini/colors';
+@import './mini/fonts';
+@import './mini/mixins';
+@import './mini/screens';
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+

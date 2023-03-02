@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en" class="min-h-screen">
+    <head>
+         <title> Product Preview Card Component </title> 
+
+         <meta charset="UTF-8">
+         <!-- google fonts -->
+         <link rel="preconnect" href="https://fonts.googleapis.com">
+         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+         <link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,100;0,9..144,200;0,9..144,300;0,9..144,400;0,9..144,500;0,9..144,600;0,9..144,700;0,9..144,800;0,9..144,900;1,9..144,100;1,9..144,200;1,9..144,300;1,9..144,400;1,9..144,500;1,9..144,600;1,9..144,700;1,9..144,800;1,9..144,900&display=swap" rel="stylesheet"> 
+         <link rel="shortcut icon" href="img/favicon-32x32.png" type="image/png">
+         <link rel="stylesheet" href="css/tailwind.css">
+               
+         <meta name="description" content="Frontend Mentor Challenge">
+         <meta name="keywords" content="Frontend, Mentor, Challenge, okeke-ugochukwu, github, developer, product, card, component, tailwind">
+         <meta name="theme-color" content="#F2EAE2">
+         <meta name="viewport" content="width=device-width, initial-scale=1.0">
+         
+         <!--Open Graph data-->
+         <meta property="og:locale" content="en_US"/>
+         <meta property="og:type" content="website"/>
+         <meta property="og:title" content="Product Preview Card Component"/>
+         <meta property="og:description" content="Frontend Mentor Challenge"/>
+         <meta property="og:url" content=""/>
+         <meta property="og:image" content=""/>
+         <meta property="og:image:width" content="1200"/>
+         <meta property="og:image:height" content="600"/>
+         <meta property="og:image:alt" content="Website Image Snippet"/>
+         <meta name="robots" content="follow, index">
+
+         <!--Twitter Cards-->
+         <meta name="twitter:card" content="summary_large_image">
+         <meta name="twitter:title" content="Product Preview Card Component"/>
+         <meta name="twitter:description" content="Frontend Mentor Challenge"/>
+         <meta name="twitter:url" content="">
+         <meta name="twitter:image" content="">    
+    </head>
+
+    <body class="bg-cream h-screen flex justify-center items-center">
+        
+      <main 
+         class="
+            w-[91.46%]  min-w-[345px] max-w-[345px] min-h-[610px] max-h-[610px] bg-white m-auto h-[91.60%] rounded-[10px] overflow-hidden
+            md:flex md:min-w-[600px] md:max-w-[600px] md:min-h-[450px] md:max-h-[450px] 
+         "
+      >
+         <!-- PRODUCT IMG -->
+         <div class="md:w-1/2">
+            <picture>
+               <source media="(min-width:768px)" srcset="./img/image-product-desktop.jpg">
+               <img src="./img/image-product-mobile.jpg" alt="Flowers">
+            </picture>
+         </div>
+
+         <!-- PRODUCT DESCR -->
+         <div class="p-6 md:w-1/2 md:p-0 md:px-[32px] flex flex-col justify-center ">
+            <div class="font-sans font-medium text-saurus text-xs leading-[14.63px] tracking-[5px] mb-4 md:mb-[20px]">
+               PERFUME
+            </div>
+
+            <h1 class="font-serif text-[32px] leading-[32px] font-bold mb-4 text-gunmetal md:mb-6">
+               Gabrielle Essence Eau De Parfum
+            </h1>
+
+            <p class="text-saurus font-medium text-sm leading-[23px] mb-[24px] md:mb-[29px]">
+               A floral, solar and voluptuous interpretation composed by Olivier Polge, 
+               Perfumer-Creator for the House of CHANEL.
+            </p>
+
+            <div class="flex items-center gap-[19px] mb-[19px] md:mb-[30px]">
+               <span class="font-serif font-extrabold text-[32px] leading-[32px] text-aquamarine inline-block">
+                  $149.99
+               </span>
+
+               <span class="font-sans font-medium text-[13px] leading-[23px] text-saurus line-through inline-block">
+                  $169.99
+               </span>
+            </div>
+
+            <button 
+               class="
+                  w-full  rounded-[8px] bg-aquamarine text-white 
+                  h-[48px] max-h-[48px] hover:bg-deep-aquamarine hover:scale-105
+               "
+               id="action-btn"
+            >
+               <div class="flex justify-center items-center gap-[11.61px] text-sm font-extrabold leading-[17.07px]" id="action-btn-msg">
+                  <img src="./img/icon-cart.svg" alt="cart_img">
+                  
+                  <span> Add to Cart </span>
+               </div>
+            </button>
+         </div>
+      </main>
+       
+        <script type="text/javascript" src="js/script.js"></script>
+    </body>
+</html>

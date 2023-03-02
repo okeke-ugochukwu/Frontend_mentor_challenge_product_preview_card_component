@@ -1,0 +1,9 @@
+*:focus {
+    outline: none;
+}
+* {
+    transition: .3s;
+}
+html {
+    scroll-behavior: smooth;
+}
